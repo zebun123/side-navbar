@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontwasom 5 -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Side navbar</title>
+</head>
+
+<body>
+    <!-- header part -->
+    <header class="navbar">
+        <div class="logo">
+            Navbar
+        </div>
+        <div class="bar" onclick="openNav()">&#9776</div>
+    </header>
+    <!-- navbar poart -->
+    <nav class="sideNav" id="Nav">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times</a>
+        <a href="#"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+        <a href="#"><i class="fab fa-accusoft" aria-hidden="true"> Services</i></a>
+        <a href="#"><i class="fab fa-accusoft" aria-hidden="true"> Link</i></a>
+        <a href="#"><i class="fab fa-accusoft" aria-hidden="true"> Link</i></a>
+        <a href="#"><i class="far fa-address-card" aria-hidden="true"> About Us</i></a>
+        <a href="#"><i class="far fa-paper-plane" aria-hidden="true"> Contact Us</i></a>
+    </nav>
+
+    <!-- main body start  -->
+    <section class="header_part">
+        <h2 class="tittle">SIDE NAVBAR</h2>
+        <p class="text">welcome to our side navbar</p>
+    </section>
+
+    <script>
+        const navBar = document.getElementById("Nav");
+        const openNav = () => {
+            navBar.style.width = "250px";
+        };
+        const closeNav = () => {
+            let nav = false;
+            navBar.style.width = "0vh";
+        };
+    </script>
+</body>
+
+</html>
